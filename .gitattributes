@@ -1,0 +1,2 @@
+Videos/* filter=lfs diff=lfs merge=lfs -text
+VRTigo/* filter=lfs diff=lfs merge=lfs -text
