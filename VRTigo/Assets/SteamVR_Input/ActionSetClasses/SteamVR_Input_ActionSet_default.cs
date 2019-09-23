@@ -17,35 +17,19 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_default : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Boolean InteractUI
+        public virtual SteamVR_Action_Boolean Menu
         {
             get
             {
-                return SteamVR_Actions.default_InteractUI;
+                return SteamVR_Actions.default_Menu;
             }
         }
         
-        public virtual SteamVR_Action_Boolean Teleport
+        public virtual SteamVR_Action_Single Fire
         {
             get
             {
-                return SteamVR_Actions.default_Teleport;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean GrabPinch
-        {
-            get
-            {
-                return SteamVR_Actions.default_GrabPinch;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean GrabGrip
-        {
-            get
-            {
-                return SteamVR_Actions.default_GrabGrip;
+                return SteamVR_Actions.default_Fire;
             }
         }
         
@@ -73,19 +57,43 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Single Squeeze
-        {
-            get
-            {
-                return SteamVR_Actions.default_Squeeze;
-            }
-        }
-        
         public virtual SteamVR_Action_Boolean HeadsetOnHead
         {
             get
             {
                 return SteamVR_Actions.default_HeadsetOnHead;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 Movement
+        {
+            get
+            {
+                return SteamVR_Actions.default_Movement;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Sprint
+        {
+            get
+            {
+                return SteamVR_Actions.default_Sprint;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean RotateLeft
+        {
+            get
+            {
+                return SteamVR_Actions.default_RotateLeft;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean RotateRight
+        {
+            get
+            {
+                return SteamVR_Actions.default_RotateRight;
             }
         }
         
