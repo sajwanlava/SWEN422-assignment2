@@ -28,5 +28,7 @@ Score is added to a leaderboard, player can compare themselves to previous attem
 * Pointer based vs. Touch based interface?
 * everything should be a part of the virtual environment. 
 * @snellgnich will clarify with simon regarding the requirements of the interface.
-* 
+
+### A/B Testing
+* Same input used for menu interaction and projectiles (determined by whether viewing menu) vs different inputs
 
