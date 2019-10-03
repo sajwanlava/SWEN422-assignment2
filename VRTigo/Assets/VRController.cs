@@ -13,8 +13,10 @@ public class VRController : MonoBehaviour
     public SteamVR_Action_Boolean rotateRight;
     public SteamVR_Action_Single fire;
     public SteamVR_Action_Boolean menu;
+
     public GameObject shotPrefab;
     public GameObject rightController;
+    public GameObject leftController;
     public float shotSpeed;
     public bool fired;
     public bool rapidFire;
@@ -62,12 +64,24 @@ public class VRController : MonoBehaviour
             {
                 fired = true;
                 GameObject shot = Instantiate(shotPrefab);
+                shot.GetComponent<PortalProjectile>().isPrimary = true;
                 shot.transform.position = rightController.transform.position;
                 shot.GetComponent<Rigidbody>().AddForce(rightController.transform.forward * shotSpeed, ForceMode.Impulse);
             }
-            Debug.Log(fire.GetAxis(SteamVR_Input_Sources.RightHand));
         }
-        else{
+        else if (fire.GetAxis(SteamVR_Input_Sources.LeftHand) > fireThreshold)
+        {
+            if (!fired || rapidFire)
+            {
+                fired = true;
+                GameObject shot = Instantiate(shotPrefab);
+                shot.GetComponent<PortalProjectile>().isPrimary = false;
+                shot.transform.position = leftController.transform.position;
+                shot.GetComponent<Rigidbody>().AddForce(leftController.transform.forward * shotSpeed, ForceMode.Impulse);
+            }
+        }
+        else
+        {
             fired = false;
         }
 
