@@ -34,16 +34,16 @@ public class PortalCamera : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        GameObject collisionObject = other.gameObject;
-        if (collisionObject.layer == 0)
-        {
-            Debug.Log(other.gameObject.name);
-            collisionObject.layer = LayerMask.NameToLayer("PortalHiddenEffect");
-        }
-        else
-        {
-            collisionObject.layer = 0;
-        }
+//        GameObject collisionObject = other.gameObject;
+//        if (collisionObject.layer == 0)
+//        {
+//            Debug.Log(other.gameObject.name);
+//            collisionObject.layer = LayerMask.NameToLayer("PortalHiddenEffect");
+//        }
+//        else
+//        {
+//            collisionObject.layer = 0;
+//        }
     }
 }
   
