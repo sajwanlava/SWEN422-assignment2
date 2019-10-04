@@ -7,8 +7,9 @@ public class PortalTeleporter : MonoBehaviour
 {
 
     public Transform player;
-    public Transform receiver; 
-    
+    public Transform receiver;
+
+    private bool playerIsOverlapping = false;
     
     
     // Update is called once per frame
@@ -21,7 +22,12 @@ public class PortalTeleporter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            
+            playerIsOverlapping = true;
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        
     }
 }

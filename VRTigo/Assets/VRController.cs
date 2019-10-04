@@ -22,6 +22,9 @@ public class VRController : MonoBehaviour
     public bool rapidFire;
     public float fireThreshold = 0.5f;
 
+    public GameObject portalA;
+    public GameObject portalB;
+
     private void Awake()
     {
         playerController = GameObject.Find("[CameraRig]").GetComponent<CharacterController>();
@@ -65,6 +68,7 @@ public class VRController : MonoBehaviour
                 fired = true;
                 GameObject shot = Instantiate(shotPrefab);
                 shot.GetComponent<PortalProjectile>().isPrimary = true;
+                shot.GetComponent<PortalProjectile>().SetPortalReference(portalB);
                 shot.transform.position = rightController.transform.position;
                 shot.GetComponent<Rigidbody>().AddForce(rightController.transform.forward * shotSpeed, ForceMode.Impulse);
             }
@@ -76,6 +80,7 @@ public class VRController : MonoBehaviour
                 fired = true;
                 GameObject shot = Instantiate(shotPrefab);
                 shot.GetComponent<PortalProjectile>().isPrimary = false;
+                shot.GetComponent<PortalProjectile>().SetPortalReference(portalA);
                 shot.transform.position = leftController.transform.position;
                 shot.GetComponent<Rigidbody>().AddForce(leftController.transform.forward * shotSpeed, ForceMode.Impulse);
             }

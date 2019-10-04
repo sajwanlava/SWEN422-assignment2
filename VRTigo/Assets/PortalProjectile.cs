@@ -11,6 +11,8 @@ public class PortalProjectile : MonoBehaviour
     private float maxTime = 10.0f;
     private float curTime = 0.0f;
 
+    private GameObject portalReference;
+
     private void Update()
     {
         CheckAliveTime();
@@ -21,16 +23,21 @@ public class PortalProjectile : MonoBehaviour
         Debug.Log("Collision Detected");
         GameObject hit = collision.gameObject;
         if (hit.tag.Equals("Portalable"))
-            CreatePortal(isPrimary);
+            CreatePortal(isPrimary, collision);
     }
 
-    private void CreatePortal(bool portalSwitch)
+    private void CreatePortal(bool portalSwitch, Collision collision)
     {
         Debug.Log("Acceptable Surface");
 
-        //Create the portal in here
-        //true = right controller, false = left controller
 
+        if (portalReference == null)
+            return;
+
+        //enable the portal
+        portalReference.SetActive(true);
+        portalReference.transform.position = collision.GetContact(0).point;
+        
         Destroy(gameObject);
     }
 
@@ -39,5 +46,10 @@ public class PortalProjectile : MonoBehaviour
         curTime += Time.deltaTime;
         if (curTime >= maxTime)
             Destroy(gameObject);
+    }
+
+    public void SetPortalReference(GameObject portal) 
+    {
+        this.portalReference = portal;
     }
 }

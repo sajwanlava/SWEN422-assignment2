@@ -34,7 +34,7 @@ public class PortalCamera : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-//        GameObject collisionObject = other.gameObject;
+        GameObject collisionObject = other.gameObject;
 //        if (collisionObject.layer == 0)
 //        {
 //            Debug.Log(other.gameObject.name);
