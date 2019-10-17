@@ -95,7 +95,7 @@ Serve as note takers
 
 ### Usability Tasks
 
-The usability tasks are derived from test scenarios developed from use cases. Due to the range and extent of the functionality provided in the application or Web site, and the short time for which each participant will be available, the tasks are the most common and relatively complex of available functions. The tasks are identical for all participants of a given user role in the study.
+The usability tasks are derived from test scenarios developed from use cases. Due to the range and extent of the functionality provided by the mini-game, and the short time for which each participant will be available, the tasks are the most common and relatively complex of available functions. The tasks are identical for all participants of a given user role in the study.
 
 ### Usability test tasks
 
