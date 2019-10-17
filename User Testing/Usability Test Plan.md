@@ -4,23 +4,23 @@
 
 ### Overview
 
-This document describes a test plan for conducting a usability test during the development of VRtigo team minigame. The goals of usability testing include establishing a baseline of user performance, establishing and validating user performance measures, and identifying potential design concerns to be addressed in order to improve the efficiency, productivity, and end-user satisfaction.
+This document describes a test plan for conducting a usability test during the development of VRtigo team mini-game. The goals of usability testing include establishing a baseline of user performance, establishing and validating user performance measures, and identifying potential design concerns to be addressed in order to improve the efficiency, productivity, and end-user satisfaction.
 The usability test objectives are:
 
 To determine design inconsistencies and usability problem areas within the user interface and content areas. Potential sources of error may include:
 
-- Navigation errors – failure to locate functions, excessive keystrokes or touches to complete a function, failure to follow recommended screen flow.
-- Presentation errors – failure to locate and properly act upon desired information in screens, selection errors due to labelling ambiguities.
-- Control usage problems – improper toolbar or entry field usage.
+- Navigation errors – failure to locate functions, excessive hand movements or touches to complete a function, failure to follow recommended screen flow.
+- Presentation errors – failure to locate and properly act upon desired information in screens, selection errors due to labelling ambiguities, and motion-sickness inducing elements.
+- Control usage problems – interaction with virtual objects lagging, and rendering issues when users go through portal.
 
 Exercise the application or web site under controlled test conditions with representative users. Data will be used to access whether usability goals regarding an effective, efficient, and well-received user interface have been achieved.
 Establish baseline user performance and user-satisfaction levels of the user interface for future usability evaluations.
 
-This minigame can be used by many people with a range of characteristics. To ensure relevant feedback for our prototype, we have acquired people from many user groups for our usability testing. The testing will take place in a lab on INSERT WHEN.
+This mini-game can be used by many people with a range of characteristics. To ensure relevant feedback for our prototype, we have acquired people from many user groups for our usability testing. The testing will take place in a lab on Monday 21st of October.
 
 ### Executive Summary
 
-The usability tests involve participants who represent our personas going through specific tasks related to our scenario use cases, in order to gather feedback on our prototype.
+The usability tests involve participants who represent an interest in games and/or virtual reality and will be going through specific tasks related to set game use-cases, in order to gather feedback on our prototype.
 
 ### Methodology
 
@@ -28,7 +28,8 @@ The detailed process has
 
 Number of participants:
 Location of testing:
-Tools used for user interaction: We used pen, paper and a laptop to carry out this testing.
+Tools used for user interaction: We will us a pen, paper and a laptop to carry out this testing.
+
 Measures collected
 
 Demographic information
@@ -38,6 +39,7 @@ Gender
 Age group
 Current relevant behaviours (what games they might play and in what sort of environment)
 Interests and priorities
+Any other traits of interest
 
 Satisfaction assessment
 
@@ -50,21 +52,19 @@ Suggestions for improvement are collected in our post-test questionnaire
 
 ### Ethics
 
-This usability study has been assessed under Victoria University of Wellington's Human Ethics Committee with approval number: INSERT THE NUMBER
+This usability study has run under the considerations of the assignment brief and participants are either enrolled in this course or are other 400 level students.
 
 ### Participants
 
-<!-- Our test participants are gained through and agreement with another group doing a different system to test their system if they test our system. They are perfectly eligible participants for our system because our web application is a study organiser, designed for primarily students, and all of our participants are students. We have also asked a tutor and a lecturer to be participants because our personas cover these, and our app will be used by these people.
-The participants will attempt to complete 21-22 tasks from the scenarios described in the scenario section. -->
+Our test participants are gained by asking other students to test our system. They are perfectly eligible participants for our mini game as they are adults enrolled in this course/are 400 level students and have an interest in games and game design. The participants will attempt to complete a range of tasks based on in-game scenarios.
 
 ### Training
 
-<!-- Participants will not be given any specific training for our web application as many of the features will be somewhat familiar from various other applications, just not in all the same place like this. We want our system to be very intuitive and easy to navigate and learn so we won't do any formal training to prepare them for testing, in order to get the most natural response and feedback. The participants will receive an overview of the usability test procedure, equipment and software. -->
+Participants will not be given any specific training for our mini-game as many of the features will be somewhat familiar from various other applications. We want our game to be very intuitive and easy to navigate and learn, so the team will not provide any formal training to prepare them for testing. This is so the team will be able to obtain a natural response and feedback. The participants will receive an overview of the usability test procedures and equipment.
 
 ### Procedure
 
-<!-- Participants will take part in the usability test at Room 242b, Cotton building, Victoria University of Wellington, Kelburn. A laptop with the web application prototype and supporting software will be used in this meeting room. The participant’s interaction with the prototype will be monitored by the facilitator 🐰 seated in the same office. Note takers 🦉 and data logger(s) will silently monitor the sessions within the room.
-Facilitator brief -->
+Participants will take part in the usability test in CO332, in the Cotton building, Victoria University of Wellington, Kelburn. A VR headset and controller will be used with the software in this room. The participants interaction with the prototype will be monitored by the facilitators and note takers and data loggers will silently monitor the sessions within the room.
 
 ### Roles
 
@@ -83,7 +83,7 @@ Responds to participant's requests for assistance
 
 Data Logger -
 
-Records participant’s actions and comments
+Records participants actions and comments
 
 Test Observers -
 
@@ -100,19 +100,19 @@ The usability tasks are derived from test scenarios developed from use cases. Du
 ### Usability test tasks
 
 Usability Metrics
-Usability metrics refers to user performance measured against specific performance goals necessary to satisfy usability requirements. Scenario completion success rates, adherence to dialog scripts, error rates, and subjective evaluations will be used. Time-to-completion of scenarios will also be collected.
+Usability metrics refers to user performance measured against specific performance goals necessary to satisfy usability requirements. Scenario completion success rates, adherence to dialogue scripts, error rates, and subjective evaluations will be used. Time-to-completion of scenarios will also be collected.
 
 Scenario Completion
 Each scenario will require, or request, that the participant inputs specific actions or data that would be used in the course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained (whether successfully or unsuccessfully) or the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
 
 Critical Errors
-Critical errors are deviations at completion from the targets of the scenario. Obtaining or otherwise reporting of the wrong data value due to participant workflow is a critical error. Participants may or may not be aware that the task goal is incorrect or incomplete.
+Critical errors are deviations at completion from the targets of the scenario. Obtaining or otherwise reporting of the wrong data value due to participant work flow is a critical error. Participants may or may not be aware that the task goal is incorrect or incomplete.
 In general, critical errors are unresolved errors during the process of completing the task or errors that produce an incorrect outcome.
 
 Non-critical Errors
 Non-critical errors are errors that are recovered from by the participant or, if not detected, do not result in processing problems or unexpected results. Although non-critical errors can be undetected by the participant, when they are detected they are generally frustrating to the participant.
 These errors may be procedural, in which the participant does not complete a scenario in the most optimal means (e.g., excessive steps and keystrokes). These errors may also be errors of confusion (ex., initially selecting the wrong function, using a user-interface control incorrectly such as attempting to edit an un-editable field).
-Noncritical errors can always be recovered from during the process of completing the scenario. Exploratory behaviour, such as opening the wrong menu while searching for a function, will be coded as a non-critical error.
+Non-critical errors can always be recovered from during the process of completing the scenario. Exploratory behaviour, such as opening the wrong menu while searching for a function, will be coded as a non-critical error.
 
 Subjective Evaluations
 Subjective evaluations regarding ease of use and satisfaction will be collected via questionnaires, and during debriefing at the conclusion of the session. The questionnaires will utilise free-form responses and rating scales. The scales range from 1 to 5 - 1 being bad/unsatisfactory/low, and 5 being good/satisfactory/high.
@@ -121,7 +121,7 @@ Scenario Completion Time (time on task)
 The time to complete each scenario, not including subjective evaluation durations, will be recorded.
 
 Usability Goals
-The usability goals for the minigame include:
+The usability goals for the mini-game include:
 
 Completion Rate
 Completion rate is the percentage of test participants who successfully complete the task without critical errors. A critical error is defined as an error that results in an incorrect or incomplete outcome. In other words, the completion rate represents the percentage of participants who, when they are finished with the specified task, have an "output" that is correct. Note: If a participant requires assistance in order to achieve a correct output then the task will be scored as a critical error and the overall completion rate for the task will be affected.
