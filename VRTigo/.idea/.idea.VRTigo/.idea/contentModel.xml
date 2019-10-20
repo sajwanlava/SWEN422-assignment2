@@ -9,6 +9,7 @@
         <e p="ButtonPressTest.cs" t="Include" />
         <e p="CharacterController.cs" t="Include" />
         <e p="CollectibleBehaviour.cs" t="Include" />
+        <e p="LeaderboardBehaviour.cs" t="Include" />
         <e p="Portal" t="Include">
           <e p="PortalCamera.cs" t="Include" />
           <e p="PortalTeleporter.cs" t="Include" />

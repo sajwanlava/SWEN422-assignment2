@@ -4,16 +4,12 @@
     <list default="true" id="db7a5dae-fda7-4c27-b175-a1fa3facc768" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRTigo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRTigo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CollectibleBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CollectibleBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6120c0-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6120c0-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/55c2b8-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/55c2b8-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/25/25a775dda1e444237afbccc58e3ee717" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/25/25a775dda1e444237afbccc58e3ee717" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +36,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/CollectibleBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <marker date="1571538980726" expanded="true" signature="6:166" ph="..." />
                 <marker date="1571538980726" expanded="true" signature="217:688" ph="{...}" />
                 <marker date="1571538980726" expanded="true" signature="396:461" ph="{...}" />
                 <marker date="1571538980726" expanded="true" signature="510:686" ph="{...}" />
                 <marker date="1571538980726" expanded="true" signature="562:680" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/LeaderboardBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <folding>
+                <marker date="1571543206064" expanded="true" signature="6:92" ph="..." />
+                <marker date="1571543206064" expanded="true" signature="143:1013" ph="{...}" />
+                <marker date="1571543206064" expanded="true" signature="302:522" ph="{...}" />
+                <marker date="1571543206064" expanded="true" signature="317:355" ph="/* read file ... */" />
+                <marker date="1571543206064" expanded="true" signature="580:601" ph="{...}" />
+                <marker date="1571543206064" expanded="true" signature="687:1011" ph="{...}" />
+                <marker date="1571543206064" expanded="true" signature="702:839" ph="/* update leaderboard data ... */" />
+                <marker date="1571543206064" expanded="true" signature="1032:1144" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -96,6 +111,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Portal/PortalCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScoreBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/PortalTextureSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LeaderboardBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CollectibleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -106,6 +122,7 @@
         <option value="$PROJECT_DIR$/Assets/Portal/PortalCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/ScoreBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/CollectibleBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/LeaderboardBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -188,12 +205,12 @@
       <updated>1569793594189</updated>
       <workItem from="1569793596920" duration="2611000" />
       <workItem from="1570057241599" duration="367000" />
-      <workItem from="1571534037591" duration="2571000" />
+      <workItem from="1571534037591" duration="3620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5549000" />
+    <option name="totallyTimeSpent" value="6598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,14 +326,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CollectibleBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <marker date="1571538980726" expanded="true" signature="6:166" ph="..." />
             <marker date="1571538980726" expanded="true" signature="217:688" ph="{...}" />
             <marker date="1571538980726" expanded="true" signature="396:461" ph="{...}" />
             <marker date="1571538980726" expanded="true" signature="510:686" ph="{...}" />
             <marker date="1571538980726" expanded="true" signature="562:680" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LeaderboardBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <marker date="1571543206064" expanded="true" signature="6:92" ph="..." />
+            <marker date="1571543206064" expanded="true" signature="143:1013" ph="{...}" />
+            <marker date="1571543206064" expanded="true" signature="302:522" ph="{...}" />
+            <marker date="1571543206064" expanded="true" signature="317:355" ph="/* read file ... */" />
+            <marker date="1571543206064" expanded="true" signature="580:601" ph="{...}" />
+            <marker date="1571543206064" expanded="true" signature="687:1011" ph="{...}" />
+            <marker date="1571543206064" expanded="true" signature="702:839" ph="/* update leaderboard data ... */" />
+            <marker date="1571543206064" expanded="true" signature="1032:1144" ph="{...}" />
           </folding>
         </state>
       </provider>
