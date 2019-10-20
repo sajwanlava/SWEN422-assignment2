@@ -18,12 +18,13 @@ public class VRController : MonoBehaviour
     public GameObject rightController;
     public GameObject leftController;
     public float shotSpeed;
-    public bool fired;
+    public bool leftFired;
+    public bool rightFired;
     public bool rapidFire;
     public float fireThreshold = 0.5f;
 
-    public GameObject portalA;
-    public GameObject portalB;
+    public GameObject portalLeft;
+    public GameObject portalRight;
 
     private void Awake()
     {
@@ -63,31 +64,35 @@ public class VRController : MonoBehaviour
 
         if (fire.GetAxis(SteamVR_Input_Sources.RightHand) > fireThreshold)
         {
-            if(!fired || rapidFire)
+            if(!leftFired || rapidFire)
             {
-                fired = true;
+                leftFired = true;
                 GameObject shot = Instantiate(shotPrefab);
                 shot.GetComponent<PortalProjectile>().isPrimary = true;
-                shot.GetComponent<PortalProjectile>().SetPortalReference(portalB);
+                shot.GetComponent<PortalProjectile>().SetPortalReference(portalRight);
                 shot.transform.position = rightController.transform.position;
                 shot.GetComponent<Rigidbody>().AddForce(rightController.transform.forward * shotSpeed, ForceMode.Impulse);
             }
         }
-        else if (fire.GetAxis(SteamVR_Input_Sources.LeftHand) > fireThreshold)
+        else
         {
-            if (!fired || rapidFire)
+            leftFired = false;
+        }
+        if (fire.GetAxis(SteamVR_Input_Sources.LeftHand) > fireThreshold)
+        {
+            if (!rightFired || rapidFire)
             {
-                fired = true;
+                rightFired = true;
                 GameObject shot = Instantiate(shotPrefab);
                 shot.GetComponent<PortalProjectile>().isPrimary = false;
-                shot.GetComponent<PortalProjectile>().SetPortalReference(portalA);
+                shot.GetComponent<PortalProjectile>().SetPortalReference(portalLeft);
                 shot.transform.position = leftController.transform.position;
                 shot.GetComponent<Rigidbody>().AddForce(leftController.transform.forward * shotSpeed, ForceMode.Impulse);
             }
         }
         else
         {
-            fired = false;
+            rightFired = false;
         }
 
         if (menu.GetStateDown(SteamVR_Input_Sources.LeftHand))

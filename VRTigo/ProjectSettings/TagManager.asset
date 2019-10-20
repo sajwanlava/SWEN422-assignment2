@@ -8,6 +8,8 @@ TagManager:
   - projectile
   - NotPortalable
   - Portalable
+  - Fire
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Player
   - Projectile
   - PortalHiddenEffect
-  - 
+  - Portalable
   - 
   - 
   - 

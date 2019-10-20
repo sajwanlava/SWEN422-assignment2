@@ -10,6 +10,7 @@ public class PortalProjectile : MonoBehaviour
 
     private float maxTime = 10.0f;
     private float curTime = 0.0f;
+    private float minOverlapDistance = 5.5f;
 
     private GameObject portalReference;
 
@@ -20,24 +21,50 @@ public class PortalProjectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision Detected");
-        GameObject hit = collision.gameObject;
-        if (hit.tag.Equals("Portalable"))
-            CreatePortal(isPrimary, collision);
+
+        GameObject hitObject = collision.gameObject;
+        if (hitObject.tag.Equals("Portalable"))
+        {
+            RaycastHit hit;
+            LayerMask mask = LayerMask.GetMask("Portalable");
+            bool hitSuccess = Physics.Raycast(transform.position, hitObject.transform.position, out hit, Mathf.Infinity, mask);
+            CreatePortal(isPrimary, collision, hit, hitSuccess);
+        }
     }
 
-    private void CreatePortal(bool portalSwitch, Collision collision)
+    //Bug: Angle change fails when object is on a right angle
+    private void CreatePortal(bool portalSwitch, Collision collision, RaycastHit hit, bool hitSuccess)
     {
-        Debug.Log("Acceptable Surface");
-
-
+        Debug.Log(hit.collider);
         if (portalReference == null)
             return;
 
+        GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
+        foreach(GameObject portal in portals){
+            if (portal != portalReference && Vector3.Distance(transform.position, portal.transform.position) < minOverlapDistance)
+            {
+                Destroy(gameObject);
+                return;
+            }
+        }
+
         //enable the portal
         portalReference.SetActive(true);
+        //set position
         portalReference.transform.position = collision.GetContact(0).point;
-        
+
+        //set rotation
+        if (hitSuccess)
+        {
+            Debug.Log(hit.collider);
+            portalReference.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+            Vector3 norm = portalReference.transform.eulerAngles;
+            Debug.Log(norm);
+            norm.x = 0;
+            norm.z = 90;
+            portalReference.transform.eulerAngles = norm;
+        }
+
         Destroy(gameObject);
     }
 
