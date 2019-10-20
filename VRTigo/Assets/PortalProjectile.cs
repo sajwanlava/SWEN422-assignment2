@@ -61,7 +61,6 @@ public class PortalProjectile : MonoBehaviour
             Vector3 norm = portalReference.transform.eulerAngles;
             Debug.Log(norm);
             norm.x = 0;
-            norm.y = -norm.y;
             norm.z = 90;
             portalReference.transform.eulerAngles = norm;
         }

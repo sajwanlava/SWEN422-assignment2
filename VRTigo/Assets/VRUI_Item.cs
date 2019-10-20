@@ -38,6 +38,7 @@ public class VRUI_Item : MonoBehaviour
         }
 
         boxCollider.size = rectTransform.sizeDelta;
+        boxCollider.size = new Vector3(boxCollider.size.x, boxCollider.size.y, 1);
     }
 
     private void OnCollisionEnter(Collision collision)

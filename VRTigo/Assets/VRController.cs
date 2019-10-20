@@ -26,6 +26,8 @@ public class VRController : MonoBehaviour
     public GameObject portalLeft;
     public GameObject portalRight;
 
+    public bool allowPortalCreation = true;
+
     private void Awake()
     {
         playerController = GameObject.Find("[CameraRig]").GetComponent<CharacterController>();
