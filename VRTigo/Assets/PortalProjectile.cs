@@ -27,7 +27,9 @@ public class PortalProjectile : MonoBehaviour
         {
             RaycastHit hit;
             LayerMask mask = LayerMask.GetMask("Portalable");
-            bool hitSuccess = Physics.Raycast(transform.position, hitObject.transform.position, out hit, Mathf.Infinity, mask);
+            bool hitSuccess = Physics.Raycast(transform.position, (hitObject.transform.position -transform.position).normalized, out hit, Mathf.Infinity, mask);
+            Debug.DrawRay(transform.position, hit.normal, Color.red, Mathf.Infinity);
+
             CreatePortal(isPrimary, collision, hit, hitSuccess);
         }
     }
@@ -35,7 +37,6 @@ public class PortalProjectile : MonoBehaviour
     //Bug: Angle change fails when object is on a right angle
     private void CreatePortal(bool portalSwitch, Collision collision, RaycastHit hit, bool hitSuccess)
     {
-        Debug.Log(hit.collider);
         if (portalReference == null)
             return;
 
@@ -47,19 +48,16 @@ public class PortalProjectile : MonoBehaviour
                 return;
             }
         }
-
-        //enable the portal
-        portalReference.SetActive(true);
-        //set position
-        portalReference.transform.position = collision.GetContact(0).point;
-
-        //set rotation
+        
         if (hitSuccess)
         {
-            Debug.Log(hit.collider);
-            portalReference.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+            portalReference.transform.position = collision.GetContact(0).point;
+
+            
+            //portalReference.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+            portalReference.transform.right = hit.normal;
+
             Vector3 norm = portalReference.transform.eulerAngles;
-            Debug.Log(norm);
             norm.x = 0;
             norm.z = 90;
             portalReference.transform.eulerAngles = norm;
