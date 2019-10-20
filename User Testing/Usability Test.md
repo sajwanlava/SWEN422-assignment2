@@ -20,5 +20,6 @@ Please read tasks out loud as well as the following sentence:
 9. Fire a blue portal at a grey shape.
 10. Fire an orange portal at a grey shape.
 11. Fire a portal at the ground.
+12. Exit the Level through the hole in the wall
 
 **Level One**
