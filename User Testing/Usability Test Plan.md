@@ -70,24 +70,24 @@ Participants will take part in the usability test in CO332, in the Cotton buildi
 
 The roles involved in a usability test are as follows. An individual may play multiple roles and tests may not require all roles.
 
-Trainer -
+Trainer - Nick
 
 Provide training overview prior to usability testing
 
-Facilitator -
+Facilitator - Lavanya
 
 Provides an overview of the study to participants
 Defines usability and purpose of usability testing to participants
 Assists in conducting the participant and observer debriefing sessions
 Responds to participant's requests for assistance
 
-Data Logger -
+Data Logger - Rachel
 
 Records participants actions and comments
 
-Test Observers -
+Test Observers - Brandon
 
-Silent observer
+Silent observer - Cameron
 
 Assists the data logger in identifying problems, concerns, coding bugs, and procedural errors.
 
