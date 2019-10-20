@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using Valve.VR.InteractionSystem;
 
 public class CollectibleBehaviour : MonoBehaviour
@@ -10,7 +11,7 @@ public class CollectibleBehaviour : MonoBehaviour
     public float rotateY = 0;
     public float rotateZ = 0;
 
-    public float value = 300;
+    public int value = 300;
 
     // Update is called once per frame
     void Update()
@@ -20,10 +21,10 @@ public class CollectibleBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (other.gameObject.tag == "Player")
         {
             this.gameObject.SetActive(false);
+            ScoreBehaviour.instance.score += value;
         }
     }
 }
