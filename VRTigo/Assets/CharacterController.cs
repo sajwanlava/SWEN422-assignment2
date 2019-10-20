@@ -10,10 +10,11 @@ public class CharacterController : MonoBehaviour
     public float rotateValue;
     public float sprintSpeed;
     public float walkSpeed;
+    public bool hasTele = false;
 
     void Start()
     {
-        
+         
     }
 
     void Update()
