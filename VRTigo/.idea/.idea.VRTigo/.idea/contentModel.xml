@@ -8,12 +8,14 @@
       <e p="Assets" t="Include">
         <e p="ButtonPressTest.cs" t="Include" />
         <e p="CharacterController.cs" t="Include" />
+        <e p="CollectibleBehaviour.cs" t="Include" />
         <e p="Portal" t="Include">
           <e p="PortalCamera.cs" t="Include" />
           <e p="PortalTeleporter.cs" t="Include" />
           <e p="PortalTextureSetup.cs" t="Include" />
           <e p="ScreenCutoutShader.shader" t="Include" />
         </e>
+        <e p="PortalProjectile.cs" t="Include" />
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
