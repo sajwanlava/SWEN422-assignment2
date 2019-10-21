@@ -11,6 +11,7 @@ Fillable [here](https://forms.gle/B6Gvjxc9wt7xRuXc8)
 | It was easy to learn how to navigate the game                              |
 | I believe this would be fun to play                                        |
 | I did not feel any vertigo or motion sickness                              |
+| The sound effects improved my experience                                   |
 
 **Please provide comments on the following:**
 
