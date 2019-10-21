@@ -27,3 +27,5 @@ Please read tasks out loud as well as the following sentence:
 
 **Level One**
 * Reach the goal as quickly as possible.
+
+* Look at the scoreboard. Try and beat your score.
