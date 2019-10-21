@@ -26,6 +26,12 @@ public class VRController : MonoBehaviour
     public GameObject portalLeft;
     public GameObject portalRight;
 
+    public Material projLeftMaterial;
+    public Material projRightMaterial;
+
+    public Color projLeftColour;
+    public Color projRightColour;
+
     public bool allowPortalCreation = true;
 
     private void Awake()
@@ -70,6 +76,8 @@ public class VRController : MonoBehaviour
             {
                 leftFired = true;
                 GameObject shot = Instantiate(shotPrefab);
+                shot.GetComponent<MeshRenderer>().material = projRightMaterial;
+                shot.GetComponentInChildren<Light>().color = projRightColour;
                 shot.GetComponent<PortalProjectile>().isPrimary = true;
                 shot.GetComponent<PortalProjectile>().SetPortalReference(portalRight);
                 shot.transform.position = rightController.transform.position;
@@ -86,6 +94,8 @@ public class VRController : MonoBehaviour
             {
                 rightFired = true;
                 GameObject shot = Instantiate(shotPrefab);
+                shot.GetComponent<MeshRenderer>().material = projLeftMaterial;
+                shot.GetComponentInChildren<Light>().color = projLeftColour;
                 shot.GetComponent<PortalProjectile>().isPrimary = false;
                 shot.GetComponent<PortalProjectile>().SetPortalReference(portalLeft);
                 shot.transform.position = leftController.transform.position;

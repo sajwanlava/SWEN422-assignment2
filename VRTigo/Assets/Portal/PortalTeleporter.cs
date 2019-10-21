@@ -28,14 +28,16 @@ public class PortalTeleporter : MonoBehaviour
 
 
         Vector3 portalToPlayer = player.position - transform.position;
-        float dotProduct = Vector3.Dot(transform.up, portalToPlayer);
-            
         float rotationDiff = -Quaternion.Angle(transform.rotation, receiver.rotation);
         rotationDiff += 180;
+        Debug.Log(rotationDiff);
         player.Rotate(Vector3.up, rotationDiff);
 
-        Vector3 positionOffest = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
-        player.position = receiver.position + positionOffest  + (playerCamera.transform.forward * 4);
+        //Vector3 positionOffest = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+
+
+        player.position = receiver.position;// + (player.transform.forward * 4);
+
 
         characterController.hasTele = true;
         

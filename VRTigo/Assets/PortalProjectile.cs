@@ -14,6 +14,8 @@ public class PortalProjectile : MonoBehaviour
 
     private GameObject portalReference;
 
+    
+
     private void Update()
     {
         CheckAliveTime();
