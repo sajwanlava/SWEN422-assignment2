@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,8 +14,6 @@ public class LevelManager : MonoBehaviour
     public float timerCount = 0;
     public Text gameText;
     public bool findScore = true;
-    public bool showBestTime = false;
-    private float bestTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -56,10 +55,14 @@ public class LevelManager : MonoBehaviour
         //End the level
         //calculate the score
         if (findScore) {
-            if (bestTime < timerCount) {
-                bestTime = timerCount;
-            }
-            gameText.text = "Best Time: " + bestTime.ToString("F2") + "\n Last Time: " + timerCount.ToString("F2");
+            string score_name = SceneManager.GetActiveScene().name+".json";
+            StreamWriter writer = new StreamWriter(name, true);
+            writer.Write(JsonUtility.ToJson(new Score(timerCount)));
+            writer.Close();
+
+            writer = new StreamWriter("lastTime.json");
+            writer.Write(JsonUtility.ToJson(new Score(timerCount)));
+            writer.Close();
         }
         //teleport to the menu scene
         SceneManager.LoadScene("Menu");
