@@ -1,4 +1,5 @@
 ## Usability Tests
+
 _This is for the team to use for their during test notes._
 
 Please read tasks out loud as well as the following sentence:
@@ -24,6 +25,6 @@ Please read tasks out loud as well as the following sentence:
 13. Fire a portal at the ground.
 14. Exit the Level through the hole in the wall
 
-
 **Level One**
-* Reach the goal as quickly as possible.
+
+15. Reach the goal as quickly as possible.

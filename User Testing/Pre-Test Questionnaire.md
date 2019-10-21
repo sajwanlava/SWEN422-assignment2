@@ -1,4 +1,4 @@
-##Pre-Test Questionnaire
+# Pre-Test Questionnaire
 
 Google form [here (collaboration view)](https://docs.google.com/forms/d/1IurW6Rl1Yg8tsEm5XC7-9ZwVbr4R7qXYFjcds6QMNsU/edit?usp=sharing) and [here](https://forms.gle/MV9Dm8SPwfud5TNW8)
 
@@ -12,3 +12,25 @@ Google form [here (collaboration view)](https://docs.google.com/forms/d/1IurW6Rl
 | Do you suffer from vertigo or motion sickness? (Vertigo, Motion sickness, Both, Neither)                                                                                                             |
 | Is gaming something you enjoy? (Yes/No) <!--  Can explain this -->                                                                                                                                   |
 | What are your interests？<!--  Can explain this -->                                                                                                                                                  |
+
+### USER GROUP ONE
+
+|              | Gender | Age   | How often do you play video games? | When was the last time you played a VR game? | Would you describe yourself as comfortable using and learning new games? | Do you suffer from vertigo or motion sickness? | Is gaming something you enjoy? | What are your interests?                                         |
+| ------------ | ------ | ----- | ---------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------- | ------------------------------ | ---------------------------------------------------------------- |
+| Player One   | Male   | 21-30 | Daily                              | Within the past week                         | Yes                                                                      | Motion sickness                                | Yes                            | Roller blading, TV, games, reading                               |
+| Player Two   | Male   | 21-30 | Fortnightly                        | Never                                        | Yes                                                                      | Neither                                        | Yes                            | I liked podcasts, reading books, programming.                    |
+| Player Three | Male   | 21-30 | Weekly                             | Within the past week                         | Yes                                                                      | Neither                                        | Yes                            | Music, programming, VR, gaming                                   |
+| Player Four  | Male   | 21-30 | Daily                              | Within the past week                         | Yes                                                                      | Neither                                        | Yes                            | Mountain biking, snowboarding, technology, software, video games |
+| Player Five  | Female | 21-30 | Not frequently at all              | Never                                        | No                                                                       | Motion sickness                                | Yes                            | Eating and sleeping                                              |
+
+## USER GROUP TWO
+
+|               | Gender | Age   | How often do you play video games? | When was the last time you played a VR game? | Would you describe yourself as comfortable using and learning new games? | Do you suffer from vertigo or motion sickness? | Is gaming something you enjoy? | What are your interests?       |
+| ------------- | ------ | ----- | ---------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------- | ------------------------------ | ------------------------------ |
+| Player Six    | Female | 21-30 | Monthly                            | More than a year ago                         | No                                                                       | Neither                                        | Yes                            | Music, Food :)                 |
+| Player Seven  | Male   | 21-30 | Fortnightly                        | Never                                        | Yes                                                                      | Neither                                        | Yes                            | Frisbee, Music                 |
+| Player Eight  | Male   | 21-30 | Weekly                             | Within the past month                        | Yes                                                                      | Neither                                        | Yes                            | VR, AR, games                  |
+| Player Nine   | Male   | 21-30 | Fortnightly                        | Within the past month                        | Yes                                                                      | Neither                                        | Yes                            | Game development, programming  |
+| Player Ten    | Male   | 21-30 | Daily                              | More than a year ago                         | Yes                                                                      | Motion sickness                                | Yes                            | photography, games, music      |
+| Player Eleven | Male   | 21-30 | Daily                              | Within the past week                         | Yes                                                                      | Vertigo                                        | Yes                            | Gaming, in case you can't tell |
+| Player Twelve | Male   | 21-30 | Daily                              | Within the past week                         | Yes                                                                      | Neither                                        | Yes                            | PC gaming                      |
