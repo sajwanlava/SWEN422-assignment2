@@ -11,7 +11,7 @@ Please read tasks out loud as well as the following sentence:
 
 0. Select tutorial from the menu
 1. Move towards the big white cube.
-2. Move towards the other white prism.
+2. Move towards the other white cube.
 3. Look up to the top of the pyramid.
 4. Walk through the Orange Portal
 5. Walk back through the Blue Portal
