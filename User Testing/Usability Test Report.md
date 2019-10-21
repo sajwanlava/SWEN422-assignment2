@@ -35,8 +35,6 @@ This section outlines the times, completion rates, error rates and any further n
 | Fire a portal at the ground                      |            |            |              |             |             |
 | Exit the level through the hole in the wall      |            |            |              |             |             |
 | Level One: Reach the goal as quickly as possible |            |            |              |             |             |
-|                                                  |            |            |              |             |             |
-|                                                  |            |            |              |             |             |
 
 **TASK RATES**
 | Task | Completion Rate % | Error-Free Rate % | Notes |
@@ -57,12 +55,21 @@ This section outlines the times, completion rates, error rates and any further n
 
 **PROBLEMS**
 
-These problems are based on the first five testers of our pre-test and post-test questionnaires. Their response to the seventh question in the post-test questionnaire will be disregarded as we did not have audio functioning at that point in time.
-
-| Problem | Impact (Low, Moderate, High) | Frequency (Low, Moderate, High) | Severity (1-4) <!-- 1 is high severity and 4 is the lowest --> |
-| ------- | ---------------------------- | ------------------------------- | -------------------------------------------------------------- |
-|         |                              |                                 |                                                                |
-|         |                              |                                 |                                                                |
+| Task                                                 | Completion Rate % | Error-Free Rate % | Notes |
+| ---------------------------------------------------- | ----------------- | ----------------- | ----- |
+| Select Tutorial from the Menu                        |                   |                   |       |
+| Move towards the big white cube                      |                   |                   |       |
+| Move towards the sinking white cube                  |                   |                   |       |
+| Look up to the top of the original cube              |                   |                   |       |
+| Walk through the orange portal                       |                   |                   |       |
+| Walk back through the blue portal                    |                   |                   |       |
+| Fire a portal at the big white cube                  |                   |                   |       |
+| Walk through the blue portal                         |                   |                   |       |
+| Walk back through the orange portal                  |                   |                   |       |
+| Fire an orange portal at the grey shape              |                   |                   |       |
+| Fire a portal at the ground                          |                   |                   |       |
+| Exit the level through the hole in the wall          |                   |                   |       |
+| **Level One**: Reach the goal as quickly as possible |                   |                   |       |
 
 **CHANGES**
 
