@@ -25,3 +25,4 @@ Please read tasks out loud as well as the following sentence:
 12. Exit the Level through the hole in the wall
 
 **Level One**
+* Reach the goal as quickly as possible.
