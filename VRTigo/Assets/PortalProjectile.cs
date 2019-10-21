@@ -14,7 +14,6 @@ public class PortalProjectile : MonoBehaviour
 
     private GameObject portalReference;
 
-    
 
     private void Update()
     {
@@ -41,6 +40,8 @@ public class PortalProjectile : MonoBehaviour
     {
         if (portalReference == null)
             return;
+
+        GetComponent<AudioSource>().Play();
 
         GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
         foreach(GameObject portal in portals){

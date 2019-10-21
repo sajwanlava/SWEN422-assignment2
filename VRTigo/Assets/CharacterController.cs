@@ -24,18 +24,19 @@ public class CharacterController : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        if (sprint)
-        {
-            transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * walkSpeed);
-            transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * walkSpeed);
-        }
+        //if (sprint)
+        //{
+        //    transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * walkSpeed);
+        //    transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * walkSpeed);
+        //}
 
         //if sprinting or flying, modifier will increase the speed in the next step
-        float modifier = (sprint ? sprintSpeed : walkSpeed);
+        //float modifier = (sprint ? sprintSpeed : walkSpeed);
+        float modifier = walkSpeed;
 
         //move the cameraRig
-        transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * walkSpeed * Time.deltaTime * modifier, Space.Self);
-        transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * walkSpeed * Time.deltaTime * modifier, Space.Self);
+        transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * Time.deltaTime * modifier, Space.Self);
+        transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * Time.deltaTime * modifier, Space.Self);
     }
 
 

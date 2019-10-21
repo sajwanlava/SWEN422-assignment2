@@ -34,9 +34,12 @@ public class VRController : MonoBehaviour
 
     public bool allowPortalCreation = true;
 
+    private AudioSource sound;
+
     private void Awake()
     {
         playerController = GameObject.Find("[CameraRig]").GetComponent<CharacterController>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -72,6 +75,8 @@ public class VRController : MonoBehaviour
 
         if (fire.GetAxis(SteamVR_Input_Sources.RightHand) > fireThreshold)
         {
+            sound.Play();
+
             if(!leftFired || rapidFire)
             {
                 leftFired = true;

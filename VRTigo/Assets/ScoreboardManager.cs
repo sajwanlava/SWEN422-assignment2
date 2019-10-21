@@ -12,7 +12,7 @@ public class ScoreboardManager : MonoBehaviour
 
     private string levelOneData;
     private string levelTwoData;
-    private string lastTimeData;
+    private Score lastTimeData;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class ScoreboardManager : MonoBehaviour
 
         levelOneData = levelOne.ReadToEnd();
         levelTwoData = levelTwo.ReadToEnd();
-        lastTimeData = lastTime.ReadToEnd();
+        lastTimeData = JsonUtility.FromJson<Score>(lastTime.ReadToEnd());
 
         levelOne.Close();
         levelTwo.Close();
@@ -31,7 +31,7 @@ public class ScoreboardManager : MonoBehaviour
         //process level1 and 2
 
 
-        LastTimeText.text = lastTimeData;
+        LastTimeText.text = lastTimeData.time.ToString("F2");
     }
 
 
