@@ -3,7 +3,7 @@ _This is for the team to use for their during test notes._
 
 Please read tasks out loud as well as the following sentence:
 
-"We will be timing how long it takes for you to complete tasks and we will be taking our own notes on completion rate which can be released to you if you would like."
+"We will be timing how long it takes for you to complete tasks and we will be taking our own notes on completion rate which can be released to you if you would like. When you finish a task, just stop until we tell you otherwise"
 
 <!-- INSERT A GENERAL SPIEL OF HOW TO USE THE VIVE. -->
 
