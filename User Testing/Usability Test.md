@@ -9,6 +9,7 @@ Please read tasks out loud as well as the following sentence:
 
 **Tutorial Level**
 
+0. Select tutorial from the menu
 1. Move towards the big white cube.
 2. Move towards the other white prism.
 3. Look up to the top of the pyramid.
