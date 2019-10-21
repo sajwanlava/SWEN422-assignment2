@@ -37,6 +37,7 @@ This section outlines the times, completion rates, error rates and any further n
 | Level One: Reach the goal as quickly as possible |            |            |              |             |             |
 
 **TASK RATES**
+
 | Task | Completion Rate % | Error-Free Rate % | Notes |
 |-------------------------------------------------------|-----------------|-----------------|-------|
 | Select Tutorial from the Menu | | | |
