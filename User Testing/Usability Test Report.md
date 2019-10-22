@@ -112,4 +112,15 @@ These problems are based on the testers six till twelve of our pre-test and post
 |         |                              |                                 |                                                                |
 |         |                              |                                 |                                                                |
 
+## Qualitative Observations
+
+Some observations during the first set of user tests are as follows:
+
+* Person 2 had significant trouble finding the hole in the wall during the first level and walked the perimeter of the first area twice
+* Person 3 stated they hadn't played portal
+* Person 3 had problems telling light portalable surfaces from dark non-portalable surfaces
+* Person 3 managed to glitch a portal shot through the glass barrier in level 2
+* Person 3 on multiple occaisions went through portals in quick succession only to wind up where they were initially
+* Person 4 tried climbing the small wall in level 2 and stated that looking over the edge made them feel ill
+
 ## Further Recommendations
