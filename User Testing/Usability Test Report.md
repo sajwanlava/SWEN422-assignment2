@@ -32,7 +32,7 @@ This section outlines the times, completion rates, error rates and any further n
 | Walk through the blue portal                     | 2.23       | 3.23       | 3.26         |             | 1.0         |
 | Walk back through the orange portal              | 3.25       | 3.02       | 2.95         | 4.70        | 9.33        |
 | Fire a portal at a grey surface            | 1.90       | 2.22       | 21.6         | 3.10        | 3.00        |
-| Fire a portal at open space | | || | |
+| Fire a portal at open space | | 2.04 | 2.16 | 9.48 | 2.40 |
 | Fire a portal at the ground                      |            | 0.52       | 1.26         | 0.72        | 2.40        |
 | Exit the level through the hole in the wall      | 14.69      | 64.60      | 72.2         | 47.68       | 38.76       |
 | Level One: Reach the goal as quickly as possible | 48.40      | 24.60      | 36.62        | 70          | 130.54      |
@@ -101,7 +101,7 @@ Between the user groups, we managed to get the following problems improved:
 | Walk through the blue portal                         | 5.52       | 1.13         | 2.11         | 1.20        | 4.30       | 0.88          | 1.72          |
 | Walk back through the orange portal                  | 1.25       | 6.02         | 3.15         | 5.25        | 1.92       | 0.78          | 3.95          |
 | Fire an orange portal at the grey shape              | 1.96       | 2.70         | 1.43         | 4.15        | 2.20       | 1.95          | 1.72          |
-| Fire a portal into open space |       |         |        |        |        |          |           |
+| Fire a portal into open space                        | 1.78       | 1.92         | 4.99         | 4.85        | 3.70       | 0.90          | 1.62          |
 | Fire a portal at the ground                          | 0.99       | 0.65         | 0.89         | 1.09        | 1.83       | 0.86          |               |
 | Exit the level through the hole in the wall          | 63.86      | 42.36        | 30.48        | 116.74      | 54.23      | 24.93         | 22.25         |
 | **Level One**: Reach the goal as quickly as possible | 100.86     | 65.62        | 41.85        | 273.19      | 32.51      | 29.37         | 30.72         |
