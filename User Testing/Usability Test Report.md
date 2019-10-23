@@ -63,7 +63,7 @@ These problems are based on testers one till five of our pre-test and post-test 
 | Problem | Impact (Low, Moderate, High) | Frequency (Low, Moderate, High) | Severity (1-4) <!-- 1 is high severity and 4 is the lowest --> |
 | ------- | ---------------------------- | ------------------------------- | -------------------------------------------------------------- |
 | Trouble finding the hole in the wall during the first level and walked the perimeter of the first area twice        | Moderate                             |        Moderate                         |            1                                                    |
-| Players walking too fast which made the first person camera launch up walls and this was vertigo and motion-sickness inducing       |     High                         |             Moderate                    |                  4                                              |
+| A side platform wall too low which made the first person camera launch up the wall and nearly fall into nothingness which was vertigo and motion-sickness inducing       |     High                         |             Moderate                    |                  4                                              |
 | Glitch in the game as players are able to shoot through an obstacle |             High                 |                Moderate                 |                     Low                                           | 4
 | Confusing for players as context of the game is not known which meant that on multiple occasions some through portals in quick succession only to wind up where they were initially |         Moderate                     |                High                 |                          4                                      |
 | The colour difference between the grey and the white is not obvious enough |         Moderate                     |             High                    |              2                                                  |
@@ -71,8 +71,17 @@ These problems are based on testers one till five of our pre-test and post-test 
 | Green goal was not obvious | High | Moderate | 4 |
 | Green goal takes too long to register level completion | High | High | 4 |
 | Shapes were too big which meant that the game was too disorienting for some players | Low | Low | 2 |
+| Portal balls were moving too fast | Moderate | Moderate | 2 |
+| Needs to be more immersive so the environment feels more complete | Low | Low | 2 |
 
 #### Fixes Between Test Groups
+
+Between the user groups, we managed to get the following problems improved:
+
+1.  *Needs to be more immersive so the environment feels more complete* - Sounds were implemented so when the users would shoot and go through the portals there would be different sounds associated with the action.
+2.  *Shapes were too big which meant that the game was too disorienting for some players* - A lot of the players had issues with the sizing of level one so the wall sizes were decreased to solve this.
+3.  *A side platform wall too low which made the first person camera launch up the wall and nearly fall into nothingness which was vertigo and motion-sickness inducing* - This wall was increased to prevent anyone else being able to jump on it.
+4.  *Portal balls were moving too fast* - Velocity was decreased which made the rebound action more natural.
 
 ### Group Two Results
 
@@ -90,6 +99,7 @@ These problems are based on testers one till five of our pre-test and post-test 
 | Walk through the blue portal                         | 5.52       | 1.13         | 2.11         | 1.20        | 4.30       | 0.88          | 1.72          |
 | Walk back through the orange portal                  | 1.25       | 6.02         | 3.15         | 5.25        | 1.92       | 0.78          | 3.95          |
 | Fire an orange portal at the grey shape              | 1.96       | 2.70         | 1.43         | 4.15        | 2.20       | 1.95          | 1.72          |
+| Fire a portal into open space |       |         |        |        |        |          |           |
 | Fire a portal at the ground                          | 0.99       | 0.65         | 0.89         | 1.09        | 1.83       | 0.86          |               |
 | Exit the level through the hole in the wall          | 63.86      | 42.36        | 30.48        | 116.74      | 54.23      | 24.93         | 22.25         |
 | **Level One**: Reach the goal as quickly as possible | 100.86     | 65.62        | 41.85        | 273.19      | 32.51      | 29.37         | 30.72         |
