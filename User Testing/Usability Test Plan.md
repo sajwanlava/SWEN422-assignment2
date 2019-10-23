@@ -1,7 +1,5 @@
 ## Usability Test Plan
 
-### Authors
-
 ### Overview
 
 This document describes a test plan for conducting a usability test during the development of VRtigo team mini-game. The goals of usability testing include establishing a baseline of user performance, establishing and validating user performance measures, and identifying potential design concerns to be addressed in order to improve the efficiency, productivity, and end-user satisfaction.
