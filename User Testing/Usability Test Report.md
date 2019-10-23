@@ -31,7 +31,8 @@ This section outlines the times, completion rates, error rates and any further n
 | Fire a portal at the big white cube              | 1.02       | 3.26       | 11.9         | 7.63        | 7.02        |
 | Walk through the blue portal                     | 2.23       | 3.23       | 3.26         |             | 1.0         |
 | Walk back through the orange portal              | 3.25       | 3.02       | 2.95         | 4.70        | 9.33        |
-| Fire an orange portal at the grey shape          | 1.90       | 2.22       | 21.6         | 3.10        | 3.00        |
+| Fire a portal at a grey surface            | 1.90       | 2.22       | 21.6         | 3.10        | 3.00        |
+| Fire a portal at open space | | || | |
 | Fire a portal at the ground                      |            | 0.52       | 1.26         | 0.72        | 2.40        |
 | Exit the level through the hole in the wall      | 14.69      | 64.60      | 72.2         | 47.68       | 38.76       |
 | Level One: Reach the goal as quickly as possible | 48.40      | 24.60      | 36.62        | 70          | 130.54      |
@@ -40,19 +41,20 @@ This section outlines the times, completion rates, error rates and any further n
 
 | Task                                                 | Completion Rate % | Error-Free Rate % | Notes |
 | ---------------------------------------------------- | ----------------- | ----------------- | ----- |
-| Select Tutorial from the Menu                        |                   |                   |       |
-| Move towards the big white cube                      |                   |                   |       |
-| Move towards the sinking white cube                  |                   |                   |       |
-| Look up to the top of the original cube              |                   |                   |       |
-| Walk through the orange portal                       |                   |                   |       |
-| Walk back through the blue portal                    |                   |                   |       |
-| Fire a portal at the big white cube                  |                   |                   |       |
-| Walk through the blue portal                         |                   |                   |       |
-| Walk back through the orange portal                  |                   |                   |       |
-| Fire an orange portal at the grey shape              |                   |                   |       |
-| Fire a portal at the ground                          |                   |                   |       |
-| Exit the level through the hole in the wall          |                   |                   |       |
-| **Level One**: Reach the goal as quickly as possible |                   |                   |       |
+| Select Tutorial from the Menu                        |     100%           |     80%              |   Without a pointer coming from the sensor, some players selected the wrong level.    |
+| Move towards the big white cube                      |      100%             |   60%                |   Objects were too large to differenciate what was the necessary shape to walk towards.    |
+| Move towards the sinking white cube                  |       100%           |       80%            |  Objects were too large to differenciate what was the necessary shape.     |
+| Look up to the top of the original cube              |         100%          |        100%           |       |
+| Walk through the orange portal                       |         100%          |        100%           |       |
+| Walk back through the blue portal                    |        100%           |        100%           |       |
+| Fire a portal at the big white cube                  |      100%             |         100%          |       |
+| Walk through the blue portal                         |      100%             |           100%        |       |
+| Walk back through the orange portal                  |         100%          |         100%          |       |
+| Fire a portal at a grey surface             |         100%          |         40%          |  Grey was not easily differenciable to white     |
+| Fire a portal at open space                       |    100%               |    100%               |       |
+| Fire a portal at the ground | 100% |100% | |
+| Exit the level through the hole in the wall          |  100%                 |    60%               |  Hole was not obvious, to two of the five players. However, it has been decided this is more of a puzzle solving issue rather than functionality.      |
+| **Level One**: Reach the goal as quickly as possible |  100%                 |    60%               |  One user got launched up a wall and experienced vertigo. Another managed to shoot right through a wall and finish the level quite quickly. A lot had difficulties understanding what the goal was.      |
 
 **PROBLEMS**
 
@@ -60,11 +62,15 @@ These problems are based on testers one till five of our pre-test and post-test 
 
 | Problem | Impact (Low, Moderate, High) | Frequency (Low, Moderate, High) | Severity (1-4) <!-- 1 is high severity and 4 is the lowest --> |
 | ------- | ---------------------------- | ------------------------------- | -------------------------------------------------------------- |
-| Person 2 had significant trouble finding the hole in the wall during the first level and walked the perimeter of the first area twice        |                              |                                 |                                                                |
-| Person 3 had problems telling light portalable surfaces from dark non-portalable surfaces        |                              |                                 |                                                                |
-| Person 3 managed to glitch a portal shot through the glass barrier in level 2 |                              |                                 |                                                                |
-| Person 3 on multiple occaisions went through portals in quick succession only to wind up where they were initially |                              |                                 |                                                                |
-| Person 4 tried climbing the small wall in level 2 and stated that looking over the edge made them feel ill |                              |                                 |                                                                |
+| Trouble finding the hole in the wall during the first level and walked the perimeter of the first area twice        | Moderate                             |        Moderate                         |            1                                                    |
+| Players walking too fast which made the first person camera launch up walls and this was vertigo and motion-sickness inducing       |     High                         |             Moderate                    |                  4                                              |
+| Glitch in the game as players are able to shoot through an obstacle |             High                 |                Moderate                 |                     Low                                           | 4
+| Confusing for players as context of the game is not known which meant that on multiple occasions some through portals in quick succession only to wind up where they were initially |         Moderate                     |                High                 |                          4                                      |
+| The colour difference between the grey and the white is not obvious enough |         Moderate                     |             High                    |              2                                                  |
+| Other levels are accidentally chosen and there is no option to confirm choice or go to the menu again, so have to go through an already completed level/tutorial. | High | High | 4 |
+| Green goal was not obvious | High | Moderate | 4 |
+| Green goal takes too long to register level completion | High | High | 4 |
+| Shapes were too big which meant that the game was too disorienting for some players | Low | Low | 2 |
 
 #### Fixes Between Test Groups
 
