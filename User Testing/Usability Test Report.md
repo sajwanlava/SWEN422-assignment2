@@ -32,8 +32,8 @@ This section outlines the time-on-task, completion rates, error rates and any fu
 | Walk through the blue portal                     | 2.23       | 3.23       | 3.26         | -           | 1.0         |**2.43**|
 | Walk back through the orange portal              | 3.25       | 3.02       | 2.95         | 4.70        | 9.33        |**4.65**|
 | Fire a portal at a grey surface                  | 1.90       | 2.22       | 21.6         | 3.10        | 3.00        |**6.36**|
-| Fire a portal at open space                      |            | 2.04       | 2.16         | 9.48        | 2.40        |**4.02**|
-| Fire a portal at the ground                      |            | 0.52       | 1.26         | 0.72        | 2.40        |**1.23**|
+| Fire a portal at open space                      |  -         | 2.04       | 2.16         | 9.48        | 2.40        |**4.02**|
+| Fire a portal at the ground                      |  -         | 0.52       | 1.26         | 0.72        | 2.40        |**1.23**|
 | Exit the level through the hole in the wall      | 14.69      | 64.60      | 72.2         | 47.68       | 38.76       |**47.59**|
 | Level One: Reach the goal as quickly as possible | 48.40      | 24.60      | 36.62        | 70          | 130.54      |**62.03**|
 
