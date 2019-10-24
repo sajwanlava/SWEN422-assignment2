@@ -36,5 +36,11 @@ The time taken to complete a level is recorded, and the best times are stored on
 
 This project had two stages of evaluations. For details on this, see [here](https://gitlab.ecs.vuw.ac.nz/swen422-2019-a2/t19/swen422-assignment2/blob/master/User%20Testing/Usability%20Test%20Report.md).
 
+## Documentation
+
+Documentation relating to this project such as the group analysis and player types can be found in the documentation folder.
+
+The group analysis can be found [here](https://gitlab.ecs.vuw.ac.nz/swen422-2019-a2/t19/swen422-assignment2/blob/master/Documentation/Group%20Analysis.md) while discussion of player types can be found [here](https://gitlab.ecs.vuw.ac.nz/swen422-2019-a2/t19/swen422-assignment2/blob/master/Documentation/Player%20Type.md).
+
 ## Video
 A short gameplay demo, and a video of the real-life interactions which go along with this are available in the Videos folder.
