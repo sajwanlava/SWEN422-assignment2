@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Class that handkes movement for the player in VRtigo
+/// Class that handles movement for the player
 /// </summary>
 public class CharacterController : MonoBehaviour
 {
@@ -22,9 +22,7 @@ public class CharacterController : MonoBehaviour
     /// <param name="direction">The direction that the player is to be moved in</param>
     public void Move(Vector2 direction)
     {
-        //Sets the modifier of the player movement speed, can be used for sprinting
         float modifier = walkSpeed;
-
         //Move the cameraRig
         transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * Time.deltaTime * modifier, Space.Self);
         transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * Time.deltaTime * modifier, Space.Self);
