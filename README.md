@@ -34,4 +34,4 @@ The time taken to complete a level is recorded, and the best times are stored on
 
 ## Evaluations
 
-This project had two stages of evaluations. For details on this, see TODO.
+This project had two stages of evaluations. For details on this, see [here](https://gitlab.ecs.vuw.ac.nz/swen422-2019-a2/t19/swen422-assignment2/blob/master/User%20Testing/Usability%20Test%20Report.md).
