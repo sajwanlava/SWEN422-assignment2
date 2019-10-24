@@ -26,7 +26,7 @@ The usability tests involve participants who represent an interest in games and/
 
 Number of participants: 10+ <br>
 Location of testing:Co332 <bbr>
-Tools used for user interaction: We will use laptops to carry out the testing and users will use the Vive headset and controllers. 
+Tools used for user interaction: We will use laptops to carry out the testing and users will use the Vive headset and controllers, and will have a vomit bag available to them in-the-case of extreme vertigo or motion sickness. 
 
 **Measures collected:**:
 
