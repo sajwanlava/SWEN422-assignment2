@@ -1,7 +1,5 @@
 ## Usability Test Plan
 
-### Authors
-
 ### Overview
 
 This document describes a test plan for conducting a usability test during the development of VRtigo team mini-game. The goals of usability testing include establishing a baseline of user performance, establishing and validating user performance measures, and identifying potential design concerns to be addressed in order to improve the efficiency, productivity, and end-user satisfaction.
@@ -24,29 +22,33 @@ The usability tests involve participants who represent an interest in games and/
 
 ### Methodology
 
-The detailed process has
+**The detailed process has**:
 
-Number of participants:
-Location of testing:
-Tools used for user interaction: We will us a pen, paper and a laptop to carry out this testing.
+Number of participants: 10+ <br>
+Location of testing:Co332 <bbr>
+Tools used for user interaction: We will use laptops to carry out the testing and users will use the Vive headset and controllers. 
 
-Measures collected
+**Measures collected:**:
 
-Demographic information
+*  Time taken to complete scenario's
+*  Any observational notes
+*  Users pre-test and post-test opinions
 
-Identity within the university (student/lecturer/tutor, undergraduate/postgraduate, domestic/international)
-Gender
-Age group
-Current relevant behaviours (what games they might play and in what sort of environment)
-Interests and priorities
-Any other traits of interest
+**Demographic information:**
 
-Satisfaction assessment
+* Gender
+* Age group
+* Current relevant behaviours (what games they might play and in what sort of environment)
+* Interests and priorities
+* Any other traits of interest
 
-post-task questionnaire
-post-test questionnaire
-time taken to complete a task
-any other comments made while or after completing a task
+
+**Satisfaction assessment:**
+
+* post-test questionnaire
+* time taken to complete a task
+* any other comments made while or after completing a task
+
 
 Suggestions for improvement are collected in our post-test questionnaire
 
@@ -70,28 +72,11 @@ Participants will take part in the usability test in CO332, in the Cotton buildi
 
 The roles involved in a usability test are as follows. An individual may play multiple roles and tests may not require all roles.
 
-Trainer - Nick
 
-Provide training overview prior to usability testing
-
-Facilitator - Lavanya
-
-Provides an overview of the study to participants
-Defines usability and purpose of usability testing to participants
-Assists in conducting the participant and observer debriefing sessions
-Responds to participant's requests for assistance
-
-Data Logger - Rachel
-
-Records participants actions and comments
-
-Test Observers - Brandon
-
-Silent observer - Cameron
-
-Assists the data logger in identifying problems, concerns, coding bugs, and procedural errors.
-
-Serve as note takers
+*  Trainer - Nick (Provide training overview prior to usability testing)
+*  Facilitator - Lavanya (Provides an overview of the study to participants, defines usability and purpose of usability testing to participants, assists in conducting the participant and observer debriefing sessions, responds to participant's requests for assistance)
+*  Data Logger - Rachel (Records participants time-on-task metrics)
+*  Test Observer/Silent Observer - Brandon/Cameron (Assists the data logger in identifying problems, concerns, coding bugs, and procedural errors. Serve as note takers)
 
 ### Usability Tasks
 
@@ -100,10 +85,10 @@ The usability tasks are derived from test scenarios developed from use cases. Du
 ### Usability test tasks
 
 Usability Metrics
-Usability metrics refers to user performance measured against specific performance goals necessary to satisfy usability requirements. Scenario completion success rates, adherence to dialogue scripts, error rates, and subjective evaluations will be used. Time-to-completion of scenarios will also be collected.
+Usability metrics refers to user performance measured against specific performance goals necessary to satisfy usability requirements. Task completion success rates, adherence to dialogue scripts, error rates, and subjective evaluations will be used. Time-to-completion of scenarios will also be collected.
 
-Scenario Completion
-Each scenario will require, or request, that the participant inputs specific actions or data that would be used in the course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained (whether successfully or unsuccessfully) or the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
+Task Completion
+Each task will require, or request, that the participant inputs specific actions or data that would be used in the course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained (whether successfully or unsuccessfully) or the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
 
 Critical Errors
 Critical errors are deviations at completion from the targets of the scenario. Obtaining or otherwise reporting of the wrong data value due to participant work flow is a critical error. Participants may or may not be aware that the task goal is incorrect or incomplete.
