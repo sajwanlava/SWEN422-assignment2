@@ -57,7 +57,6 @@ public class PortalProjectile : MonoBehaviour
     /// <param name="collision">The collision object that holds information of when the projectile collided with the portalable surface</param>
     /// <param name="hit">Raycast towards the hit surface, used for rotation</param>
     /// <param name="hitSuccess">True if the raycast hit an object</param>
-    //Bug: Angle change fails when object is on a right angle
     private void CreatePortal(bool portalSwitch, Collision collision, RaycastHit hit, bool hitSuccess)
     {
         //Does nothing if the portal being moved to this location doesn't exist
@@ -114,6 +113,6 @@ public class PortalProjectile : MonoBehaviour
     /// <param name="portal">The portal that will be created by this projectile.</param>
     public void SetPortalReference(GameObject portal) 
     {
-        this.portalReference = portal;
+        portalReference = portal;
     }
 }

@@ -24,7 +24,6 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
     }
 
     /// <summary>
@@ -67,8 +66,6 @@ public class LevelManager : MonoBehaviour
     /// <returns>An updated IEnumerator with its time reduced by one second (unless the countdown reaches 0)</returns>
     private IEnumerator LevelEndCountdown() 
     {
-        Debug.Log("Starting the countdown");
-        //Counts down timer
         int counter = LevelEndTime;
         while (counter > 0)
         {
@@ -80,18 +77,14 @@ public class LevelManager : MonoBehaviour
         if (findScore) {
             string score_name = SceneManager.GetActiveScene().name+".json";
             StreamWriter writer = new StreamWriter(name, true);
-            writer.Write(JsonUtility.ToJson(new Score(timerCount)));
+            writer.WriteLine(JsonUtility.ToJson(new Score(timerCount)));
             writer.Close();
 
             writer = new StreamWriter("lastTime.json");
             writer.Write(JsonUtility.ToJson(new Score(timerCount)));
             writer.Close();
         }
-        //teleport to the menu scene
         SceneManager.LoadScene("Menu");
         yield return null;
     }
-
-
-
 }

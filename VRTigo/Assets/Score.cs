@@ -3,7 +3,6 @@
 /// </summary>
 public class Score
 {
-    //The time and score of a level
     public float time;
     public float score;
 
