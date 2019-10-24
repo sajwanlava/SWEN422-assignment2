@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class that handkes movement for the player in VRtigo
+/// </summary>
 public class CharacterController : MonoBehaviour
 {
+    //Boolean that indicates if the player is sprinting
     public bool sprint = false;
 
     [Header("Movement Fields")]
@@ -12,29 +16,16 @@ public class CharacterController : MonoBehaviour
     public float walkSpeed;
     public bool hasTele = false;
 
-    void Start()
-    {
-         
-    }
-
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// Moves the player
+    /// </summary>
+    /// <param name="direction">The direction that the player is to be moved in</param>
     public void Move(Vector2 direction)
     {
-        //if (sprint)
-        //{
-        //    transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * walkSpeed);
-        //    transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * walkSpeed);
-        //}
-
-        //if sprinting or flying, modifier will increase the speed in the next step
-        //float modifier = (sprint ? sprintSpeed : walkSpeed);
+        //Sets the modifier of the player movement speed, can be used for sprinting
         float modifier = walkSpeed;
 
-        //move the cameraRig
+        //Move the cameraRig
         transform.Translate(transform.InverseTransformDirection(Camera.main.transform.right) * direction.x * Time.deltaTime * modifier, Space.Self);
         transform.Translate(transform.InverseTransformDirection(Camera.main.transform.forward) * direction.y * Time.deltaTime * modifier, Space.Self);
     }
