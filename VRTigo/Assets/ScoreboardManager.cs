@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
 
@@ -12,10 +10,10 @@ public class ScoreboardManager : MonoBehaviour
     //Text UI objects that this class is managing
     public Text levelOneTimeText;
     public Text levelTwoTimeText;
-    public Text LastTimeText;
+    public Text lastTimeText;
     //The values being applied to the board
-    private string levelOneData;
-    private string levelTwoData;
+    private Score levelOneData;
+    private Score levelTwoData;
     private Score lastTimeData;
 
     /// <summary>
@@ -24,18 +22,41 @@ public class ScoreboardManager : MonoBehaviour
     void Start()
     {
         //Reader objects that read from the json files holding the scores
-        StreamReader levelOne = new StreamReader("Level-1.json");
-        StreamReader levelTwo = new StreamReader("Level-2.json");
         StreamReader lastTime = new StreamReader("lastTime.json");
         //Reads files for their data and closes them
-        levelOneData = levelOne.ReadToEnd();
-        levelTwoData = levelTwo.ReadToEnd();
+        levelOneData = findBestScore("Level-1.json");
+        levelTwoData = findBestScore("Level-2.json");
         lastTimeData = JsonUtility.FromJson<Score>(lastTime.ReadToEnd());
-        levelOne.Close();
-        levelTwo.Close();
         lastTime.Close();
         //Applies values to the UI text objects
-        LastTimeText.text = lastTimeData.time.ToString("F2");
+        levelOneTimeText.text = formatTime(levelOneData);
+        levelTwoTimeText.text = formatTime(levelTwoData);
+        lastTimeText.text = formatTime(lastTimeData);
+    }
+    
+    private Score findBestScore(string path)
+    {
+        StreamReader reader = new StreamReader(path);
+        string line = reader.ReadLine();
+        Score timeData = JsonUtility.FromJson<Score>(line);
+        while (line != null) 
+        {
+            string nextLine = reader.ReadLine();
+            if (nextLine == null) break;
+            Score nextTimeData = JsonUtility.FromJson<Score>(nextLine);
+            if (timeData.time > nextTimeData.time)
+            {
+                timeData = nextTimeData;
+            }
+            line = nextLine;
+        }
+        reader.Close();
+        return timeData;
+    }
+
+    public string formatTime(Score score)
+    {
+        return score.time.ToString("F2");
     }
 
 
