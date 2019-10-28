@@ -54,7 +54,7 @@ Suggestions for improvement are collected in our post-test questionnaire
 
 ### Ethics
 
-This usability study has run under the considerations of the assignment brief and participants are either enrolled in this course or are other 400 level students.
+This usability study has run under the considerations of the assignment brief and participants are either enrolled in this course or are other 400 level students. It has recieved Human Ethics Committee permission — under application 25862.
 
 ### Participants
 
